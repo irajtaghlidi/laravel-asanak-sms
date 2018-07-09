@@ -83,7 +83,7 @@ You can add a alias to `config/app.php` :
     'asanaksms' => NotificationChannels\AsanakSms\AsanakSmsChannel::class,
 ],
 ```
-You can use alias except class name in `via()` method:
+You can use alias instead of class name in `via()` method:
 
 ```php
 use Illuminate\Notifications\Notification;

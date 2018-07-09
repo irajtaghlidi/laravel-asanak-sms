@@ -1,10 +1,10 @@
 {
     "name": "irajtaghlidi/laravel-asanak-sms",
-    "description": "Asanak.ir Notifications channel for Laravel 5.6.",
-    "keywords": ["laravel", "notifications", "asanak.ir", "sms"],
+    "description": "Asanak.com Notifications channel for Laravel 5.3+",
+    "keywords": ["laravel", "notifications", "asanak.com", "sms"],
     "homepage": "https://github.com/irajtaghlidi/laravel-asanak-sms",
     "license": "MIT",
-    "version": "1.0.0-dev",
+    "version": "1.0.0",
     "minimum-stability": "stable",
     "authors": [
         {
@@ -15,9 +15,9 @@
         }
     ],
     "require": {
-        "php": "^7.1.3",
+        "php": "^5.6.4",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^6.2",
         "illuminate/queue": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
         "illuminate/notifications": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
         "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*"

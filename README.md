@@ -4,6 +4,8 @@
 
 This package makes it easy to send notifications using [asanak.com](//asanak.com) with Laravel 5.3+.
 
+* You can use Queue with Redis to speed up your application.
+
 ## Contents
 
 - [Installation](#installation)
@@ -105,7 +107,6 @@ class AccountApproved extends Notification
 
 
 
-
 In your notifiable model (for example App/User Model), make sure to include a `routeNotificationForAsanaksms()` method, which returns a phone number
 or an array of phone numbers.
 
@@ -118,7 +119,7 @@ public function routeNotificationForAsanaksms()
 
 ### Available methods
 
-`from()`: Sets the sender's name or phone number.
+`from()`: Sets the sender's phone number.
 
 `content()`: Set a content of the notification message.
 

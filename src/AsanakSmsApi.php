@@ -44,15 +44,15 @@ class AsanakSmsApi
     {
         $base = [
             // 'charset' => 'utf-8',
-            'Username'   => $this->username,
-            'Password'   => $this->password,
-            'Source'     => $this->from,
+            'username'   => $this->username,
+            'password'   => $this->password,
+            'source'     => $this->from,
         ];
 
         $params = \array_merge($base, \array_filter($params));
 
         try {
-            $response = $this->client->request('GET', $this->endpoint, ['query' => $params, 'track_redirects' => true]);
+            $response = $this->client->request('POST', $this->endpoint, ['form_params' => $params, 'track_redirects' => true]);
 
             $response = \json_decode((string) $response->getBody(), true);
 

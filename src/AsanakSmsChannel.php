@@ -67,9 +67,9 @@ class AsanakSmsChannel
         }
 
         $params = [
-            'Destination'  => \implode(',', $recipients),
+            'destination'  => \implode(',', $recipients),
             'message'     => $message->content,
-            'Source'  => $message->from,
+            'source'  => $message->from,
         ];
 
         // if ($message->sendAt instanceof \DateTimeInterface) {

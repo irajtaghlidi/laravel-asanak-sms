@@ -37,6 +37,7 @@ class AsanakSmsApi
             'timeout' => 10,
             'connect_timeout' => 10,
         ]);
+        $this->client->setDefaultOption('verify', false);
     }
 
     public function send($params)
@@ -51,7 +52,7 @@ class AsanakSmsApi
         $params = \array_merge($base, \array_filter($params));
 
         try {
-            $response = $this->client->request('GET', $this->endpoint, ['query' => $params]);
+            $response = $this->client->request('GET', $this->endpoint, ['query' => $params, 'track_redirects' => true]);
 
             $response = \json_decode((string) $response->getBody(), true);
 

@@ -1,5 +1,13 @@
 # Asanak notifications channel for Laravel 5.3+
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/irajtaghlidi/laravel-asanak-sms.svg?style=flat-square)](https://packagist.org/packages/irajtaghlidi/laravel-asanak-sms)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/irajtaghlidi/laravel-asanak-sms/master.svg?style=flat-square)](https://travis-ci.org/irajtaghlidi/laravel-asanak-sms)
+[![StyleCI](https://styleci.io/repos/65589451/shield)](https://styleci.io/repos/65589451)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/aceefe27-ba5a-49d7-9064-bc3abea0abeb.svg?style=flat-square)](https://insight.sensiolabs.com/projects/aceefe27-ba5a-49d7-9064-bc3abea0abeb)
+[![Quality Score](https://img.shields.io/scrutinizer/g/irajtaghlidi/laravel-asanak-sms.svg?style=flat-square)](https://scrutinizer-ci.com/g/irajtaghlidi/laravel-asanak-sms)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/irajtaghlidi/laravel-asanak-sms/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/irajtaghlidi/laravel-asanak-sms/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/irajtaghlidi/laravel-asanak-sms.svg?style=flat-square)](https://packagist.org/packages/irajtaghlidi/laravel-asanak-sms)
 
 
 This package makes it easy to send notifications using [asanak.com](//asanak.com) with Laravel 5.3+.

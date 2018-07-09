@@ -5,7 +5,6 @@
     "homepage": "https://github.com/irajtaghlidi/laravel-asanak-sms",
     "license": "MIT",
     "version": "1.0.1",
-    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Iraj Taghlidi",

@@ -4,7 +4,7 @@
     "keywords": ["laravel", "notifications", "asanak.com", "sms"],
     "homepage": "https://github.com/irajtaghlidi/laravel-asanak-sms",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum-stability": "stable",
     "authors": [
         {
@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": "^7.*",
+        "php": "^7.2",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "^6.2",
         "illuminate/queue": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",

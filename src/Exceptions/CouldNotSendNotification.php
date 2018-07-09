@@ -42,6 +42,6 @@ class CouldNotSendNotification extends Exception
      */
     public static function couldNotCommunicateWithSmsc(Exception $exception)
     {
-        return new static("The communication with asanak.ir failed. Reason: {$exception->getMessage()}");
+        return new static("The communication with asanak.com failed. Reason: {$exception->getMessage()}");
     }
 }

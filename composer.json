@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.*",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "^6.2",
         "illuminate/queue": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",

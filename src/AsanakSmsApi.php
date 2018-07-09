@@ -36,8 +36,8 @@ class AsanakSmsApi
         $this->client = new HttpClient([
             'timeout' => 10,
             'connect_timeout' => 10,
+            'verify' => false,
         ]);
-        $this->client->setDefaultOption('verify', false);
     }
 
     public function send($params)

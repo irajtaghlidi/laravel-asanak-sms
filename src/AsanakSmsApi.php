@@ -52,15 +52,15 @@ class AsanakSmsApi
         $params = \array_merge($base, \array_filter($params));
 
         try {
-            $response = $this->client->request('POST', $this->endpoint, ['form_params' => $params, 'track_redirects' => true]);
+            $response = $this->client->request('POST', $this->endpoint, ['form_params' => $params, 'track_redirects' => true, 'headers' => ['Accept' => 'application/json'],]);
 
-            $response = \json_decode((string) $response->getBody(), true);
+            $response_body = \json_decode((string) $response->getBody(), true);
 
-            if (isset($response['error'])) {
-                throw new \DomainException($response['error'], $response['error_code']);
+            if (isset($response_body['status'])) {
+                throw new \DomainException($response_body['status'], $response->getStatusCode());
             }
 
-            return $response;
+            return $response_body;
         } catch (\DomainException $exception) {
             throw CouldNotSendNotification::smscRespondedWithAnError($exception);
         } catch (\Exception $exception) {

@@ -9,15 +9,15 @@ class AsanakSmsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-    	$this->app->make(AsanakSmsApi::class);
+    	// $this->app->make(AsanakSmsApi::class);
 
-    	$cm = $this->app->make(ChannelManager::class);
-
-	    $cm->extend('Asanaksms', function ($app) {
-	        return new AsanakSmsChannel(
-	          new AsanakSmsApi($this->app['config']['services.asanaksms'])
-	        );
-	    });
+//    	$cm = $this->app->make(ChannelManager::class);
+//
+//        $cm->extend('Asanaksms', function ($app) {
+//            return new AsanakSmsChannel(
+//              new AsanakSmsApi($this->app['config']['services.asanaksms'])
+//            );
+//        });
 
     }
 

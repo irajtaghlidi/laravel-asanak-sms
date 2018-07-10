@@ -29,7 +29,7 @@ class CouldNotSendNotification extends Exception
     public static function smscRespondedWithAnError(DomainException $exception)
     {
         return new static(
-            "asanak.ir responded with an error '{$exception->getCode()}: {$exception->getMessage()}'"
+            "asanak.com responded with an error '{$exception->getCode()}: {$exception->getMessage()}'"
         );
     }
 

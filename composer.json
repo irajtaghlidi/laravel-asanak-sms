@@ -4,7 +4,6 @@
     "keywords": ["laravel", "notifications", "asanak.com", "sms"],
     "homepage": "https://github.com/irajtaghlidi/laravel-asanak-sms",
     "license": "MIT",
-    "version": "1.0.2",
     "authors": [
         {
             "name": "Iraj Taghlidi",
